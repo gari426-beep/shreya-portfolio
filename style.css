@@ -1,0 +1,2148 @@
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:"DM Sans",Arial,sans-serif;background:#f4efe7;color:#17171b;line-height:1.5;overflow-x:hidden}body.dark{background:#121216;color:#f4efe7}a{text-decoration:none;color:inherit}button{font-family:inherit}.noise{position:fixed;inset:0;pointer-events:none;opacity:.035;z-index:99;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E")}.navbar{height:82px;display:flex;align-items:center;justify-content:space-between;padding:0 6.5%;position:sticky;top:0;z-index:50;background:rgba(244,239,231,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(23,23,27,.08)}.dark .navbar{background:rgba(18,18,22,.88);border-color:#292930}.logo{font-weight:800;font-size:27px;letter-spacing:-2px}.logo span{font-family:Georgia,serif}.logo i{color:#ed5a2b;font-style:normal}nav{display:flex;gap:30px}nav a{font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;opacity:.72}nav a:hover,nav a.current{opacity:1;color:#ed5a2b}.nav-right{display:flex;gap:8px}.round-btn,.menu-btn{width:38px;height:38px;border:1px solid #d4ccc0;background:transparent;border-radius:50%;cursor:pointer}.menu-btn{display:none;border-radius:9px}.hero{min-height:calc(100vh - 82px);padding:70px 6.5% 80px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:50px}.availability{display:inline-flex;gap:9px;align-items:center;font-size:9px;letter-spacing:1.5px;font-weight:700;margin-bottom:25px}.availability span{width:7px;height:7px;background:#ed5a2b;border-radius:50%;box-shadow:0 0 0 5px rgba(237,90,43,.1)}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:#777169;margin-bottom:18px}.hero h1{font:700 clamp(65px,8vw,125px)/.83 "Playfair Display",Georgia,serif;letter-spacing:-6px}.hero h1 em,h2 em{font-style:italic;color:#ed5a2b}.hero-description{max-width:580px;margin:32px 0;color:#69645e;font-size:15px}.dark .hero-description,.dark .about-grid p,.dark .work-intro p{color:#a9a59f}.hero-buttons{display:flex;align-items:center;gap:25px;flex-wrap:wrap}.button{padding:15px 21px;font-size:11px;font-weight:700;letter-spacing:.4px}.button-dark{background:#17171b;color:#fff}.dark .button-dark{background:#f4efe7;color:#17171b}.button b{margin-left:20px;font-size:16px}.text-link{font-size:11px;font-weight:700}.text-link span{color:#ed5a2b;font-size:17px;margin-left:8px}.mini-stats{display:flex;gap:45px;margin-top:55px}.mini-stats div{display:flex;flex-direction:column}.mini-stats strong{font:700 25px "Playfair Display",serif}.mini-stats span{font-size:9px;color:#777169;text-transform:uppercase;letter-spacing:1px}.hero-composition{height:570px;position:relative}.shape{position:absolute}.shape-orange{width:260px;height:390px;background:#ed5a2b;right:5%;top:85px;transform:rotate(9deg)}.shape-cream{width:290px;height:390px;background:#ddd2c2;right:15%;top:55px;transform:rotate(-7deg)}.poster{position:absolute;width:300px;height:430px;right:22%;top:65px;background:#252630;color:#f5f0e7;padding:22px;box-shadow:25px 25px 0 rgba(23,23,27,.12);transform:rotate(-2deg);display:flex;flex-direction:column;justify-content:space-between}.poster-top,.poster-bottom{display:flex;justify-content:space-between;font-size:8px;letter-spacing:2px}.poster-center{position:relative;height:270px;display:flex;align-items:center;justify-content:center}.poster-center small{position:absolute;top:5px;left:0;font-size:9px;letter-spacing:3px;color:#ed5a2b}.poster-center strong{font:700 145px/.7 "Playfair Display",serif;letter-spacing:-15px}.poster-center i{position:absolute;bottom:15px;right:0;font:italic 25px "Playfair Display",serif;color:#ed5a2b}.floating-note{position:absolute;bottom:55px;right:0;background:#f4efe7;border:1px solid #d4ccc0;padding:15px;font-size:8px;line-height:1.5;letter-spacing:1.5px}.floating-note b{display:block;font-size:18px;margin-top:7px;color:#ed5a2b}.section{padding:125px 6.5%;border-top:1px solid #d9d1c5}.dark .section{border-color:#292930}.section-label{display:flex;align-items:center;gap:13px;font-size:9px;letter-spacing:2px;font-weight:800;color:#777169;margin-bottom:60px}.section-label i{display:block;width:35px;height:1px;background:#ed5a2b}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.about-grid h2,.work-intro h2,.services-content>h2,.contact h2{font:700 clamp(45px,5.8vw,80px)/.95 "Playfair Display",serif;letter-spacing:-3px}.about-grid p{color:#777169;font-size:14px;max-width:620px}.about-grid .lead{font:24px/1.35 "Playfair Display",serif;color:#27262b;margin-bottom:25px}.skill-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:35px}.skill-list span{padding:8px 11px;border:1px solid #d4ccc0;font-size:9px;letter-spacing:.7px;font-weight:700}.work-intro{display:flex;justify-content:space-between;align-items:end;margin-bottom:40px}.work-intro p{max-width:310px;color:#777169;font-size:13px}.filter-row{display:flex;gap:7px;margin-bottom:28px;flex-wrap:wrap}.filter{background:transparent;border:1px solid #d4ccc0;padding:8px 13px;font-size:9px;font-weight:700;letter-spacing:1px;cursor:pointer}.filter.active,.filter:hover{background:#17171b;color:white;border-color:#17171b}.portfolio-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px 28px}.project{cursor:pointer}.project-wide{grid-column:span 1}.visual{height:440px;position:relative;overflow:hidden;transition:transform .4s ease}.project:hover .visual{transform:translateY(-6px)}.visual-brand{background:#252630;color:#f4efe7;display:flex;align-items:center;justify-content:center}.big-sb{font:700 205px/.8 "Playfair Display",serif;letter-spacing:-20px}.visual-brand .corner{position:absolute;left:24px;bottom:22px;font-size:8px;letter-spacing:2px}.circle-word{position:absolute;right:-20px;bottom:15px;font-size:10px;letter-spacing:3px;transform:rotate(-20deg);color:#ed5a2b}.visual-social{background:#e6b49d;padding:35px;display:flex;flex-direction:column;justify-content:center}.visual-social small{font-size:9px;letter-spacing:3px}.visual-social strong{font:700 66px/.83 "Playfair Display",serif;margin-top:20px}.visual-social strong span{color:#ed5a2b}.visual-social i{position:absolute;bottom:24px;right:25px;font-size:9px}.visual-poster{background:#d6c7b5;padding:30px;display:flex;flex-direction:column;justify-content:center}.visual-poster small{position:absolute;top:25px;right:25px;font-size:8px;letter-spacing:2px}.visual-poster strong{font:700 70px/.8 "Playfair Display",serif;letter-spacing:-3px}.visual-poster strong em{color:#ed5a2b}.visual-poster span{position:absolute;bottom:25px;left:25px;font-size:8px;letter-spacing:1px}.visual-illustration{background:#aebba3;display:flex;align-items:center;justify-content:center}.visual-illustration strong{font:700 70px/.78 "Playfair Display",serif;text-align:center}.visual-illustration strong em{color:#ed5a2b}.visual-illustration .star{position:absolute;top:25px;right:30px;font-size:50px;color:#ed5a2b}.visual-illustration>span{position:absolute;bottom:24px;left:25px;font-size:8px;letter-spacing:2px}.project-meta{display:flex;justify-content:space-between;align-items:center;padding:16px 2px;border-bottom:1px solid #d4ccc0}.project-meta small{font-size:8px;letter-spacing:1.5px;color:#777169}.project-meta h3{font-size:15px;margin-top:5px}.project-meta>span{font-size:20px;color:#ed5a2b}.services-content{display:grid;grid-template-columns:.75fr 1.25fr;gap:80px}.service-list{border-top:1px solid #d4ccc0}.service-list>div{display:grid;grid-template-columns:35px 1fr 25px;gap:15px;align-items:center;padding:25px 0;border-bottom:1px solid #d4ccc0}.service-list span{font-size:9px;color:#ed5a2b;font-weight:800}.service-list h3{font-size:17px}.service-list p{font-size:11px;color:#777169;margin-top:5px}.service-list b{font-size:18px;color:#ed5a2b}.contact{padding:145px 6.5%;text-align:center;background:#252630;color:#f4efe7;position:relative;overflow:hidden}.contact-number{position:absolute;top:-70px;right:4%;font:700 250px "Playfair Display",serif;color:rgba(255,255,255,.035)}.contact .eyebrow{color:#aaa5a0}.contact h2{position:relative}.contact-copy{position:relative;color:#aaa5a0;font-size:13px;margin:22px auto 30px}.contact-button{position:relative;display:inline-flex;gap:35px;align-items:center;padding:15px 20px;background:#ed5a2b;color:white;font-size:11px;font-weight:700}.contact-button span{font-size:18px}footer{display:flex;justify-content:space-between;align-items:center;padding:25px 6.5%;font-size:9px;letter-spacing:1px;color:#777169}.modal{display:none;position:fixed;inset:0;z-index:100;align-items:center;justify-content:center;padding:25px}.modal.open{display:flex}.modal-bg{position:absolute;inset:0;background:rgba(0,0,0,.7)}.modal-box{position:relative;background:#f4efe7;color:#17171b;max-width:620px;width:100%;padding:60px}.modal-box h2{font:700 55px/.95 "Playfair Display",serif;margin-bottom:20px}.modal-box p:last-child{font-size:14px;color:#777169}.modal-box #modalClose{position:absolute;right:20px;top:14px;background:none;border:0;font-size:34px;cursor:pointer}
+@media(max-width:850px){.navbar{padding:0 5%}nav{display:none;position:absolute;top:82px;left:0;right:0;background:#f4efe7;padding:22px 6%;flex-direction:column;gap:18px;border-bottom:1px solid #d4ccc0}.dark nav{background:#121216}.menu-btn{display:block}.hero{grid-template-columns:1fr;padding:55px 6% 70px}.hero h1{font-size:70px}.hero-composition{height:470px}.poster{right:23%;width:250px;height:365px}.shape-orange{width:215px;height:330px}.shape-cream{width:240px;height:330px}.poster-center strong{font-size:115px}.about-grid,.services-content{grid-template-columns:1fr;gap:45px}.section{padding:90px 6%}.work-intro{display:block}.work-intro p{margin-top:20px}.portfolio-grid{grid-template-columns:1fr}.visual{height:380px}.contact{padding:100px 6%}footer{padding:22px 6%;gap:10px;flex-wrap:wrap}}
+@media(max-width:500px){.hero h1{font-size:58px;letter-spacing:-4px}.hero-composition{height:410px}.poster{right:12%;width:220px;height:320px}.shape-orange{right:0;width:190px;height:290px}.shape-cream{right:8%;width:205px;height:290px}.poster-center strong{font-size:95px}.mini-stats{gap:20px}.mini-stats strong{font-size:20px}.about-grid h2,.work-intro h2,.services-content>h2{font-size:48px}.visual{height:320px}.visual-brand .big-sb{font-size:150px}.visual-social strong,.visual-poster strong,.visual-illustration strong{font-size:52px}.modal-box{padding:45px 28px}.modal-box h2{font-size:42px}}
+/* ===== PORTFOLIO IMAGE PROJECTS ===== */
+
+/* ===== PROJECT IMAGE DISPLAY ===== */
+
+.visual-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+    background: #f4eee5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visual-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project:hover .visual-image img {
+    transform: scale(1.02);
+}
+
+.visual-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project:hover .visual-image img {
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .visual-image {
+        height: 380px;
+    }
+}
+/* =========================================
+   SERVICES — CREATIVE PORTFOLIO STYLE
+========================================= */
+
+.services {
+    padding-top: 120px;
+    padding-bottom: 140px;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.services-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.services-heading h2 {
+    font-size: clamp(48px, 6vw, 86px);
+    line-height: 0.98;
+    margin: 15px 0 0;
+    letter-spacing: -3px;
+}
+
+.services-heading h2 em {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+
+
+/* ---------- DECORATIVE TEXT ---------- */
+
+.services-statement {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+    opacity: 0.12;
+    transform: rotate(-8deg);
+    user-select: none;
+}
+
+.services-statement span {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(40px, 5vw, 72px);
+    line-height: 0.85;
+    font-style: italic;
+}
+
+
+/* ---------- SERVICE CARDS ---------- */
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid rgba(20, 20, 20, 0.18);
+    border-left: 1px solid rgba(20, 20, 20, 0.18);
+}
+
+.service-card {
+    position: relative;
+    min-height: 330px;
+    padding: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-right: 1px solid rgba(20, 20, 20, 0.18);
+    border-bottom: 1px solid rgba(20, 20, 20, 0.18);
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+
+/* ---------- HOVER ---------- */
+
+.service-card:hover {
+    transform: translateY(-6px);
+    background: #f2eee7;
+}
+
+
+/* ---------- NUMBER ---------- */
+
+.service-number {
+    font-size: 13px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+
+/* ---------- ICON ---------- */
+
+.service-icon {
+    position: absolute;
+    top: 32px;
+    right: 35px;
+
+    width: 55px;
+    height: 55px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+
+    transition:
+        transform 0.35s ease,
+        background 0.35s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(25deg);
+}
+
+
+/* ---------- SERVICE INFORMATION ---------- */
+
+.service-info {
+    max-width: 520px;
+}
+
+.service-info h3 {
+    font-size: 30px;
+    margin: 35px 0 15px;
+    letter-spacing: -1px;
+}
+
+.service-info p {
+    max-width: 450px;
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: 0.68;
+}
+
+
+/* ---------- TAGS ---------- */
+
+.service-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 25px;
+}
+
+.service-tags span {
+    border: 1px solid rgba(20, 20, 20, 0.25);
+    padding: 7px 12px;
+    border-radius: 30px;
+
+    font-size: 11px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ---------- ARROW ---------- */
+
+.service-arrow {
+    position: absolute;
+    right: 35px;
+    bottom: 32px;
+
+    font-size: 25px;
+
+    transition:
+        transform 0.3s ease;
+}
+
+.service-card:hover .service-arrow {
+    transform: translate(5px, -5px);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark .service-card:hover {
+    background: #242321;
+}
+
+body.dark .service-tags span {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 800px) {
+
+    .services {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .services-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 50px;
+    }
+
+    .services-heading h2 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .services-statement {
+        display: none;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        min-height: 300px;
+        padding: 28px;
+    }
+
+    .service-info h3 {
+        font-size: 26px;
+    }
+
+}
+/* =========================================
+   PORTFOLIO FILTER BUTTONS
+========================================= */
+
+.filter-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 35px 0 45px;
+}
+
+.filter {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 90px;
+    height: 42px;
+    padding: 0 20px;
+
+    background: #f5f0e8 !important;
+    color: #222 !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 30px;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px !important;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: all 0.3s ease;
+}
+
+
+/* HOVER */
+
+.filter:hover {
+    background: #f47b3a !important;
+    color: #fff !important;
+    border-color: #f47b3a !important;
+}
+
+
+/* ACTIVE */
+
+.filter.active {
+    background: #f47b3a !important;
+    color: #fff !important;
+    border-color: #f47b3a !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .filter-row {
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+
+    .filter {
+        min-width: auto;
+        height: 38px;
+        padding: 0 15px;
+        font-size: 12px !important;
+    }
+}
+/* SB LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    display: block;
+}
+footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .logo img {
+    width: 65px;
+    height: 65px;
+    object-fit: contain;
+}
+.logo img {
+    width: 58px;
+    height: 58px;
+    object-fit: contain;
+    display: block;
+}
+
+footer .logo img {
+    width: 65px;
+    height: 65px;
+}
+/* =========================================
+   PORTFOLIO ANIMATIONS
+========================================= */
+
+/* Hero entrance */
+.hero-copy {
+    animation: heroTextIn 1s ease both;
+}
+
+.hero-composition {
+    animation: heroVisualIn 1.2s ease 0.15s both;
+}
+
+@keyframes heroTextIn {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heroVisualIn {
+    from {
+        opacity: 0;
+        transform: translateX(45px) rotate(2deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) rotate(0);
+    }
+}
+/* Floating hero shapes */
+
+.shape-orange {
+    animation: floatOrange 5s ease-in-out infinite;
+}
+
+.shape-cream {
+    animation: floatCream 6s ease-in-out infinite;
+}
+
+@keyframes floatOrange {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-15px) rotate(4deg);
+    }
+}
+
+@keyframes floatCream {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(12px) rotate(-3deg);
+    }
+}
+/* Project card motion */
+
+.project {
+    transition:
+        transform 0.45s ease,
+        box-shadow 0.45s ease;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+.project .visual {
+    overflow: hidden;
+}
+
+.project .visual img {
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.project:hover .visual img {
+    transform: scale(1.04);
+}
+.project-meta > span {
+    display: inline-block;
+    transition: transform 0.35s ease;
+}
+
+.project:hover .project-meta > span {
+    transform: translate(6px, -6px);
+}
+/* Navbar link animation */
+
+.navbar nav a {
+    position: relative;
+    transition: opacity 0.3s ease;
+}
+
+.navbar nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+
+    width: 0;
+    height: 2px;
+
+    background: currentColor;
+
+    transition: width 0.3s ease;
+}
+
+.navbar nav a:hover::after {
+    width: 100%;
+}
+/* Button motion */
+
+.button,
+.contact-button {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.button:hover,
+.contact-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.button b,
+.contact-button span {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.button:hover b,
+.contact-button:hover span {
+    transform: translate(5px, -5px);
+}
+/* Service card motion */
+
+.service-card {
+    transition:
+        transform 0.4s ease,
+        background 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+    transition:
+        transform 0.5s ease,
+        background 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: rotate(25deg) scale(1.08);
+}
+html {
+    scroll-behavior: smooth;
+}
+/* =========================================
+   CREATIVE CONTACT SECTION
+========================================= */
+
+.creative-contact {
+    position: relative;
+    overflow: hidden;
+    padding: 120px 8vw 140px;
+}
+
+
+/* ---------- TOP ---------- */
+
+.contact-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.contact-decoration {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+.contact-decoration span:nth-child(even) {
+    font-size: 18px;
+}
+
+
+/* ---------- HEADING ---------- */
+
+.contact-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 80px;
+}
+
+.contact-heading h2 {
+    font-size: clamp(52px, 7vw, 100px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+    margin: 0;
+}
+
+.contact-heading h2 em {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+
+.contact-copy {
+    max-width: 500px;
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 1.7;
+    opacity: 0.7;
+}
+
+.creative-note {
+    margin-top: 25px;
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+
+/* ---------- ORBIT ---------- */
+
+.contact-orbit {
+    position: relative;
+
+    width: 180px;
+    height: 180px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-orbit span {
+    position: relative;
+    z-index: 2;
+
+    font-family: "Playfair Display", serif;
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.orbit-ring {
+    position: absolute;
+
+    width: 170px;
+    height: 170px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+
+    animation: orbitSpin 12s linear infinite;
+}
+
+.orbit-ring::before {
+    content: "✦";
+
+    position: absolute;
+    top: -9px;
+    left: 50%;
+
+    font-size: 16px;
+
+    transform: translateX(-50%);
+}
+
+@keyframes orbitSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* =========================================
+   FORM
+========================================= */
+
+.creative-form {
+    max-width: 1000px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.form-group {
+    margin-bottom: 38px;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    opacity: 0.55;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 17px 0;
+
+    background: transparent;
+
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,0.35);
+
+    color: inherit;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+
+    outline: none;
+
+    transition: border-color 0.3s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-bottom-color: currentColor;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: currentColor;
+    opacity: 0.4;
+}
+
+
+/* =========================================
+   PROJECT OPTIONS
+========================================= */
+
+.project-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-option {
+    padding: 11px 18px;
+
+    border: 1px solid rgba(255,255,255,0.35);
+    border-radius: 30px;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: "DM Sans", sans-serif;
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.project-option:hover,
+.project-option.selected {
+    background: #f47b3a;
+    border-color: #f47b3a;
+    color: white;
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.form-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    margin-top: 20px;
+}
+
+.form-bottom p {
+    font-size: 13px;
+    opacity: 0.5;
+}
+
+.send-idea {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    padding: 18px 25px;
+
+    border: none;
+    border-radius: 40px;
+
+    background: #f47b3a;
+    color: white;
+
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.send-idea b {
+    font-size: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+.send-idea:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.send-idea:hover b {
+    transform: translate(5px, -5px);
+}
+
+
+/* =========================================
+   SUCCESS MESSAGE
+========================================= */
+
+.form-success {
+    display: none;
+
+    margin-top: 25px;
+    padding: 18px 20px;
+
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 10px;
+
+    font-size: 14px;
+}
+
+.form-success.show {
+    display: block;
+    animation: successIn 0.5s ease both;
+}
+
+@keyframes successIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .creative-contact {
+        padding: 80px 6vw 90px;
+    }
+
+    .contact-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .contact-decoration {
+        display: none;
+    }
+
+    .contact-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 60px;
+    }
+
+    .contact-heading h2 {
+        font-size: 52px;
+        letter-spacing: -2px;
+    }
+
+    .contact-orbit {
+        width: 120px;
+        height: 120px;
+        align-self: flex-end;
+    }
+
+    .contact-orbit span {
+        font-size: 38px;
+    }
+
+    .orbit-ring {
+        width: 115px;
+        height: 115px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .send-idea {
+        width: 100%;
+        justify-content: space-between;
+
+    }
+}
+/* =========================================
+   ✦ ENHANCED CREATIVE CONTACT
+========================================= */
+
+.creative-contact {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Huge background typography */
+
+.creative-contact::before {
+    content: "LET'S TALK";
+    position: absolute;
+    z-index: -1;
+
+    right: -5vw;
+    bottom: 20px;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(100px, 18vw, 280px);
+    font-weight: 700;
+    font-style: italic;
+
+    opacity: 0.035;
+    white-space: nowrap;
+
+    pointer-events: none;
+
+    animation: backgroundDrift 10s ease-in-out infinite;
+}
+
+@keyframes backgroundDrift {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-35px);
+    }
+}
+
+
+/* ---------- CREATIVE TOP LINE ---------- */
+
+.contact-top {
+    position: relative;
+}
+
+.contact-top::after {
+    content: "✦";
+    position: absolute;
+    right: 0;
+    top: -15px;
+
+    font-size: 22px;
+
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(0.8) rotate(0deg);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2) rotate(90deg);
+    }
+}
+
+
+/* ---------- MOVING PROCESS ---------- */
+
+.contact-decoration {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.contact-decoration span {
+    transition: transform 0.3s ease;
+}
+
+.contact-decoration span:nth-child(even) {
+    animation: arrowPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes arrowPulse {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(7px);
+    }
+}
+
+
+/* ---------- HEADING ---------- */
+
+.contact-heading h2 {
+    animation: contactHeadingIn 1s ease both;
+}
+
+@keyframes contactHeadingIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-heading h2 em {
+    position: relative;
+}
+
+.contact-heading h2 em::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 100%;
+    height: 3px;
+
+    background: currentColor;
+
+    transform-origin: left;
+    animation: underlineReveal 1s ease 0.7s both;
+}
+
+@keyframes underlineReveal {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+    }
+}
+
+
+/* ---------- SB ORBIT ---------- */
+
+.contact-orbit {
+    cursor: pointer;
+
+    transition: transform 0.5s ease;
+}
+
+.contact-orbit:hover {
+    transform: scale(1.08);
+}
+
+.contact-orbit span {
+    transition: transform 0.5s ease;
+}
+
+.contact-orbit:hover span {
+    transform: rotate(-8deg) scale(1.1);
+}
+
+.orbit-ring {
+    animation: orbitSpin 12s linear infinite;
+}
+
+.contact-orbit::after {
+    content: "CREATIVE STUDIO";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 7px;
+    letter-spacing: 3px;
+
+    opacity: 0.4;
+
+    animation: orbitText 12s linear infinite;
+}
+
+@keyframes orbitText {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+/* =========================================
+   FORM ENHANCEMENTS
+========================================= */
+
+.creative-form {
+    position: relative;
+
+    padding: 45px;
+
+    border: 1px solid rgba(128, 128, 128, 0.25);
+    border-radius: 20px;
+
+    backdrop-filter: blur(8px);
+
+    transition:
+        transform 0.4s ease,
+        border-color 0.4s ease;
+}
+
+.creative-form:hover {
+    border-color: rgba(128, 128, 128, 0.45);
+}
+
+
+/* Input animation */
+
+.form-group {
+    position: relative;
+}
+
+.form-group input,
+.form-group textarea {
+    transition:
+        border-color 0.3s ease,
+        padding-left 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    padding-left: 8px;
+}
+
+
+/* =========================================
+   PROJECT PILLS
+========================================= */
+
+.project-option {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-option::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: currentColor;
+
+    opacity: 0.08;
+
+    transform: translateX(-105%);
+
+    transition: transform 0.4s ease;
+}
+
+.project-option:hover::before {
+    transform: translateX(0);
+}
+
+.project-option.selected {
+    transform: translateY(-4px) scale(1.03);
+}
+
+
+/* =========================================
+   SEND BUTTON
+========================================= */
+
+.send-idea {
+    position: relative;
+    overflow: hidden;
+}
+
+.send-idea::before {
+    content: "";
+
+    position: absolute;
+
+    width: 0;
+    height: 0;
+
+    left: 50%;
+    top: 50%;
+
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+
+    transform: translate(-50%, -50%);
+
+    transition:
+        width 0.5s ease,
+        height 0.5s ease;
+}
+
+.send-idea:hover::before {
+    width: 350px;
+    height: 350px;
+}
+
+.send-idea span,
+.send-idea b {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   LITTLE FLOATING STARS
+========================================= */
+
+.creative-contact::after {
+    content: "✦";
+
+    position: absolute;
+
+    top: 45%;
+    right: 7%;
+
+    font-size: 28px;
+
+    opacity: 0.25;
+
+    animation:
+        floatingStar 4s ease-in-out infinite,
+        starRotate 6s linear infinite;
+}
+
+@keyframes floatingStar {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes starRotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+
+/* =========================================
+   FORM SUCCESS
+========================================= */
+
+.form-success {
+    position: relative;
+    overflow: hidden;
+
+    border-radius: 12px;
+}
+
+.form-success::after {
+    content: "✦";
+
+    position: absolute;
+
+    right: 20px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    font-size: 22px;
+
+    animation: successStar 1.5s ease-in-out infinite;
+}
+
+@keyframes successStar {
+    0%, 100% {
+        transform: translateY(-50%) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-50%) rotate(180deg) scale(1.2);
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .creative-form {
+        padding: 25px;
+    }
+
+    .creative-contact::before {
+        font-size: 90px;
+        bottom: 30px;
+    }
+
+    .creative-contact::after {
+        right: 4%;
+    }
+
+    .contact-top::after {
+        right: 5px;
+    }
+}
+/* =========================================
+   SCROLL REVEAL ANIMATIONS
+========================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(45px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Project cards appear one after another */
+
+.project.reveal:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.project.reveal:nth-child(2) {
+    transition-delay: 0.12s;
+}
+
+.project.reveal:nth-child(3) {
+    transition-delay: 0.19s;
+}
+
+.project.reveal:nth-child(4) {
+    transition-delay: 0.26s;
+}
+
+.project.reveal:nth-child(5) {
+    transition-delay: 0.33s;
+}
+
+.project.reveal:nth-child(6) {
+    transition-delay: 0.40s;
+}
+/* =========================================
+   FULL PROJECT VIEWER
+========================================= */
+
+#modalProjectImage {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+    max-height: 60vh;
+
+    margin: 25px auto;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    animation: projectImageIn 0.5s ease both;
+}
+
+@keyframes projectImageIn {
+
+    from {
+        opacity: 0;
+        transform: scale(0.94);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+}
+
+.modal-box {
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-box h2 {
+    margin-bottom: 15px;
+}
+
+.modal-box #modalDescription {
+    line-height: 1.7;
+    opacity: 0.75;
+}
+/* =========================================
+   CUSTOM CREATIVE CURSOR
+========================================= */
+
+.custom-cursor {
+    position: fixed;
+
+    width: 18px;
+    height: 18px;
+
+    border: 1px solid currentColor;
+    border-radius: 50%;
+
+    pointer-events: none;
+    z-index: 99999;
+
+    transform: translate(-50%, -50%);
+
+    transition:
+        width 0.25s ease,
+        height 0.25s ease,
+        background 0.25s ease,
+        transform 0.15s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-cursor span {
+    opacity: 0;
+
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    transition: opacity 0.2s ease;
+}
+
+/* Project hover */
+
+.custom-cursor.project-hover {
+    width: 75px;
+    height: 75px;
+
+    background: #f47b3a;
+
+    border-color: #f47b3a;
+
+    color: white;
+}
+
+.custom-cursor.project-hover span {
+    opacity: 1;
+}
+
+/* Button hover */
+
+.custom-cursor.button-hover {
+    width: 55px;
+    height: 55px;
+
+    background: currentColor;
+}
+
+.custom-cursor.button-hover span {
+    opacity: 1;
+}
+
+/* Hide on touch devices */
+
+@media (hover: none) {
+    .custom-cursor {
+        display: none;
+    }
+}
+/* =========================================
+   DESIGN MARQUEE
+========================================= */
+
+.design-marquee {
+    width: 100%;
+    overflow: hidden;
+
+    padding: 25px 0;
+
+    border-top: 1px solid rgba(128,128,128,0.25);
+    border-bottom: 1px solid rgba(128,128,128,0.25);
+
+    white-space: nowrap;
+}
+
+.marquee-track {
+    display: inline-flex;
+    align-items: center;
+    gap: 35px;
+
+    width: max-content;
+
+    animation: marqueeMove 25s linear infinite;
+}
+
+.marquee-track span {
+    font-size: clamp(24px, 3vw, 45px);
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.marquee-track b {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@keyframes marqueeMove {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+
+}
+
+/* Pause when the user hovers */
+
+.design-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+
+/* Dark mode */
+
+body.dark .design-marquee {
+    border-color: rgba(255,255,255,0.15);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .design-marquee {
+        padding: 18px 0;
+    }
+
+    .marquee-track {
+        gap: 22px;
+        animation-duration: 18s;
+    }
+
+    .marquee-track span {
+        font-size: 25px;
+    }
+
+}
+/* =========================================
+   DESIGN PROCESS
+========================================= */
+
+.process {
+    position: relative;
+    overflow: hidden;
+}
+
+.process-heading {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 80px;
+    align-items: end;
+    margin-bottom: 80px;
+}
+
+.process-heading h2 {
+    margin: 15px 0 0;
+    font-size: clamp(50px, 7vw, 95px);
+    line-height: 0.95;
+    letter-spacing: -4px;
+}
+
+.process-heading h2 em {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+}
+
+.process-intro {
+    max-width: 380px;
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.6;
+    padding-bottom: 5px;
+}
+
+
+/* Process list */
+
+.process-list {
+    border-top: 1px solid rgba(128,128,128,0.3);
+}
+
+.process-item {
+    display: grid;
+    grid-template-columns: 90px 1fr 50px;
+    align-items: center;
+    gap: 30px;
+
+    padding: 32px 10px;
+
+    border-bottom: 1px solid rgba(128,128,128,0.3);
+
+    transition:
+        padding 0.4s ease,
+        background 0.4s ease;
+}
+
+.process-number {
+    font-size: 12px;
+    letter-spacing: 2px;
+    opacity: 0.5;
+}
+
+.process-main {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.process-main h3 {
+    margin: 0;
+
+    font-family: "Playfair Display", serif;
+    font-size: clamp(28px, 4vw, 48px);
+    font-weight: 600;
+
+    transition: transform 0.4s ease;
+}
+
+.process-main p {
+    max-width: 500px;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.6;
+
+    opacity: 0.55;
+
+    transition: opacity 0.4s ease;
+}
+
+.process-arrow {
+    font-size: 22px;
+    opacity: 0.4;
+
+    transition:
+        transform 0.4s ease,
+        opacity 0.4s ease;
+}
+
+
+/* Hover */
+
+.process-item:hover {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.process-item:hover .process-main h3 {
+    transform: translateX(12px);
+}
+
+.process-item:hover .process-main p {
+    opacity: 1;
+}
+
+.process-item:hover .process-arrow {
+    opacity: 1;
+    transform: translate(7px, -7px);
+}
+
+
+/* Decorative number */
+
+.process::after {
+    content: "05";
+
+    position: absolute;
+    right: -20px;
+    bottom: 20px;
+
+    font-family: "Playfair Display", serif;
+    font-size: 180px;
+    font-style: italic;
+
+    opacity: 0.035;
+
+    pointer-events: none;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .process-heading {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .process-heading h2 {
+        font-size: 52px;
+        letter-spacing: -2px;
+    }
+
+    .process-item {
+        grid-template-columns: 45px 1fr 25px;
+        gap: 15px;
+        padding: 25px 5px;
+    }
+
+    .process-main {
+        display: block;
+    }
+
+    .process-main h3 {
+        margin-bottom: 8px;
+        font-size: 30px;
+    }
+
+    .process-main p {
+        font-size: 13px;
+    }
+
+    .process-item:hover {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+.project-image {
+    width: 650px;
+    max-width: 100%;
+    height: 360px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    background: #111;
+}
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+.art-image {
+    width: 420px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+.art-image {
+    width: 420px;
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: 30px auto;
+    border-radius: 12px;
+}
+/* =========================================
+   PROJECT IMAGE HOVER ANIMATION
+========================================= */
+
+.project-image {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.project-image:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(255, 110, 40, 0.25);
+}
+
+.project-image img {
+    transition: transform 0.5s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.05);
+}
+/* =========================================
+   INTERACTIVE PROJECT CARD
+========================================= */
+
+.project {
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease,
+                border-color 0.4s ease;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 45px rgba(255, 110, 40, 0.18);
+}
+
+/* Image movement when card is hovered */
+.project:hover .project-image img {
+    transform: scale(1.06);
+}
+
+/* Project title animation */
+.project:hover h3 {
+    transform: translateX(6px);
+    color: #ff6b2c;
+}
+
+.project h3 {
+    transition: transform 0.3s ease,
+                color 0.3s ease;
+}
+/* =========================================
+   VIEW PROJECT OVERLAY
+========================================= */
+
+.project-image {
+    position: relative;
+}
+
+.project-image::after {
+    content: "VIEW PROJECT ↗";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    
+    background: rgba(255, 107, 44, 0.95);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    
+    opacity: 0;
+    transition: all 0.35s ease;
+    pointer-events: none;
+}
+
+.project-image:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+/* =========================================
+   PREMIUM VIEW PROJECT OVERLAY
+========================================= */
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.45);
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 2;
+}
+
+.project-image::after {
+    content: "VIEW PROJECT ↗";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    transform: translate(-50%, -50%) scale(0.8);
+    
+    background: rgba(255, 107, 44, 0.95);
+    color: white;
+    
+    padding: 13px 22px;
+    border-radius: 30px;
+    
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    
+    opacity: 0;
+    transition: all 0.4s ease;
+    
+    z-index: 3;
+    pointer-events: none;
+}
+
+.project-image:hover::before {
+    opacity: 1;
+}
+
+.project-image:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+/* =========================================
+   SOCIAL POSTER PROJECT
+========================================= */
+
+.project-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #111;
+}
+
+.project-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.project:hover .project-image img {
+    transform: scale(1.06);
+}
+
+.project {
+    cursor: pointer;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+/* =========================================
+   SOCIAL PROJECT GRID
+========================================= */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+/* Project image */
+
+.project-image {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #111;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+/* Hover effect */
+
+.project:hover .project-image img {
+    transform: scale(1.06);
+}
+
+.project {
+    cursor: pointer;
+    transition: transform 0.35s ease;
+}
+
+.project:hover {
+    transform: translateY(-8px);
+}
+/* =========================================
+   SOCIAL PROJECTS ONLY
+========================================= */
+
+.social-projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+/* Social project cards only */
+
+.social-projects .project {
+    width: 100%;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.social-projects .project:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+/* Images only inside Social projects */
+
+.social-projects .project-image {
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.social-projects .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.social-projects .project:hover .project-image img {
+    transform: scale(1.05);
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+    .social-projects {
+        grid-template-columns: 1fr;
+    }
+}
+/* Two posters side by side */
+
+.two-posters {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    width: 100%;
+}
+
+.two-posters .project-image {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.two-posters .project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.two-posters .project:hover .project-image img {
+    transform: scale(1.04);
+}
+
+.two-posters .project {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.two-posters .project:hover {
+    transform: translateY(-7px);
+}
+
+
+/* On smaller screens */
+
+@media (max-width: 700px) {
+    .two-posters {
+        grid-template-columns: 1fr;
+    }
+}
